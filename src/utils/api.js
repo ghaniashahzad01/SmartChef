@@ -1,8 +1,6 @@
 
 // src/api.js
 
-console.log("API Key:", import.meta.env.VITE_OPENROUTER_API_KEY);
-
 export const fetchRecipe = async (payload) => {
   const prompt = `
 Generate a ${payload.mealType || ""} recipe
